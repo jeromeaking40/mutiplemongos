@@ -1,0 +1,19 @@
+{
+	"name": "multiplemongos",
+	"version": "1.0.0",
+	"description": "To connect to different MongoDB instances",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon server.js"
+	},
+	"author": "Jerome King",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.16.4",
+		"mongoose": "^5.5.2"
+	},
+	"devDependencies": {
+		"nodemon": "^1.18.11"
+	}
+}
