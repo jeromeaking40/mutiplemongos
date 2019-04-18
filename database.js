@@ -22,6 +22,7 @@ function getAllCustomerDBs() {
 	return customerDB;
 }
 
+// Connect all multiple databases
 function connectMultipleDBs(multipleDBs) {
 	// Loop through the Customer DB array and connect each instance
 	multipleDBs.forEach(customerDBName => {
@@ -38,7 +39,7 @@ function connectMultipleDBs(multipleDBs) {
 	});
 }
 
-// Configure connection
+// Start the database connection
 function startDB() {
 	mongoose
 		.connect('mongodb://127.0.0.1/multiplemongos', { useNewUrlParser: true })
